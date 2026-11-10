@@ -59,7 +59,8 @@
     <RevitVersion>2026</RevitVersion>
     <RevitApiVersion>2026.0.0</RevitApiVersion>
     <DefineConstants>$(DefineConstants);REVIT_2017;REVIT_2018;REVIT_2019;REVIT_2020;REVIT_2021;REVIT_2022;REVIT_2023;REVIT_2024;REVIT_2025;REVIT_2026</DefineConstants>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <!-- Revit 2026.5+ ships APIs built against System.Runtime 10.0 -->
+    <TargetFramework>net10.0-windows</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition="$(Configuration.Contains('2027'))">
     <RevitVersion>2027</RevitVersion>
